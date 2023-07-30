@@ -1,0 +1,26 @@
+server:
+  port: 8200
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  application:
+    name: movimentacao-service
+  cloud:
+    config:
+      enabled: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/movimentacao_service?useTimeZone=true&serverTimezone=UTC
+    username: root
+    password: admin123
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  flyway:
+    url: jdbc:mysql://localhost:3306/
+    schemas: movimentacao_service
+    user: root
+    password: admin123
