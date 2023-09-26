@@ -7,6 +7,10 @@ eureka:
 spring:
   application:
     name: movimentacao-service
+  rabbitmq:    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   cloud:
     config:
       enabled: false
@@ -24,3 +28,8 @@ spring:
     schemas: movimentacao_service
     user: root
     password: admin123
+mq:
+  queues:
+    q-pedido-producao: q-pedido-producao
+
+
