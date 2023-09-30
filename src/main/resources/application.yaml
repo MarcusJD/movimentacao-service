@@ -30,6 +30,6 @@ spring:
     password: admin123
 mq:
   queues:
-    q-pedido-producao: q-pedido-producao
+    create-pedido-producao: create-pedido-producao
 
 
